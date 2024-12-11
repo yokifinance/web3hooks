@@ -1,0 +1,32 @@
+services:
+  db:
+    build:
+      context: ../
+      dockerfile: ./docker/Db.Dockerfile
+    restart: always
+
+  api:
+    build:
+      context: ../
+      dockerfile: ./docker/API.Dockerfile
+    depends_on:
+      - db
+    restart: always
+
+  event-worker:
+    build:
+      context: ../
+      dockerfile: ./docker/yoki-event-worker.Dockerfile
+    depends_on:
+      - db
+      - api
+    restart: always
+
+  webhook-executor:
+    build:
+      context: ../
+      dockerfile: ./docker/yoki-webhook-executor.Dockerfile
+    depends_on:
+      - db
+      - api
+    restart: always

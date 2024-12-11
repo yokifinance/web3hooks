@@ -1,0 +1,4 @@
+builds/*
+.DS_Store
+*.env
+log.txt

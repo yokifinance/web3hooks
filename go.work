@@ -1,0 +1,11 @@
+go 1.22
+
+toolchain go1.22.10
+
+use ./yoki-event-worker
+
+use ./yoki-webhook-executor
+
+use ./common
+
+use ./webhooks

@@ -1,0 +1,6 @@
+{
+    "go.testEnvVars": {
+        "IN_TESTS": "1"
+    },
+    "go.testTimeout": "180s"
+}

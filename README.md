@@ -1,6 +1,6 @@
 # Yoki-web3hooks
 
-Even need to receive webhooks for blockchain events for EVM chains? We did! Existing commercial solutions can be
+Ever needed to receive webhooks for blockchain events on EVM chains? We did! Existing commercial solutions can be
 too expensive for an early-stage startup. Also, what if you want full control of what's happening?
 We encountered this task in Yoki Finance and developed this open-source library
 to help you with webhooks – welcome **Yoki-web3hooks**!
